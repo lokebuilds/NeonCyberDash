@@ -2,7 +2,7 @@
 
 A sleek, fast-paced arcade dodge game built with React Native and Expo. Pilot your neon spaceship, dodge falling hazardous energy blocks, rack up your score, and beat your personal high score!
 
-Built entirely with React Native View components and shapes — no image assets required.
+Built entirely with React Native View components and shapes no image assets required.
 
 ---
 
