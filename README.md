@@ -73,8 +73,6 @@ This project was built incrementally following a structured AI development workf
 
 ---
 
----
-
 ## 📁 Project Structure
 
 ```text
@@ -89,8 +87,6 @@ NeonCyberDash/
 ├── package.json       # Node module dependencies and start scripts
 └── README.md          # Project documentation guide
 ```
-
----
 
 ---
 
