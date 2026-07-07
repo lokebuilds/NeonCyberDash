@@ -1,50 +1,120 @@
-# Welcome to your Expo app 👋
+# 🚀 Neon Cyber Dash
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A sleek, fast-paced arcade dodge game built with React Native and Expo. Pilot your neon spaceship, dodge falling hazardous energy blocks, rack up your score, and beat your personal high score!
 
-## Get started
+Built entirely with React Native View components and shapes — no image assets required.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎮 Gameplay
 
-2. Start the app
+* Move your neon spaceship left and right to avoid falling energy obstacles.
+* Every hazardous block you safely dodge increases your score.
+* One collision ends the game instantly.
+* Your highest score is saved locally on your device and persists across sessions.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* Pure shape-based graphics: Spaceship and obstacles drawn entirely using React Native Views, borders, and vibrant styles without needing external image files.
+* Left / right movement controls: Smooth on-screen directional buttons equipped with screen-boundary detection.
+* Falling hazards: Random horizontal obstacle generation driven by a continuous, real-time physics engine loop.
+* Collision engine: Instant rectangle-to-rectangle (AABB) hitbox detection between the spaceship and incoming blocks.
+* Game Over screen: A full-screen dark overlay displaying your final score, high score, and a quick-restart option.
+* Restart functionality: A unified state reset handler that clears scores and realigns elements for a fresh game instantly.
+* Persistent high score: Stored locally on-device using AsyncStorage.
+* Sleek Aesthetic: Designed with a deep midnight blue backdrop (#0B0F19), neon cyan accents (#00FFF7), and pulsing neon pink elements (#FF2E9A).
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🛠️ Tech Stack
 
-When you're ready, run:
+* Framework: React Native & Expo
+* Persistence: AsyncStorage (local high-score storage)
+* Styling: React Native StyleSheet (Absolute positioning layout)
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📋 Prerequisites
 
-## Learn more
+Before running the project, make sure you have:
+* Node.js (LTS version recommended)
+* npm (comes packaged with Node.js)
+* Expo Go application installed on your Android or iOS device
+* A code editor such as VS Code or Cursor
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 🚀 Getting Started
 
-## Join the community
+### 1. Clone the Repository
+git clone https://github.com/lokebuilds/NeonCyberDash.git
+cd NeonCyberDash
 
-Join our community of developers creating universal apps.
+### 2. Install Dependencies
+npm install
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 3. Start the Development Server
+npx expo start
+
+### 4. Run the App
+Open the Expo Go app on your phone, scan the QR code displayed in your terminal, and the game will boot right up!
+
+*(Note: You can also press 'a' in the terminal to open on an Android emulator or 'i' for an iOS simulator.)*
+
+---
+
+## 📦 Workshop Submission Reference
+This project was built incrementally following a structured AI development workflow. It has been finalized, tested, and validated under Path B (GitHub + Screen Recording) verification guidelines. 
+
+* All game mechanics operate cleanly out of a single, highly-optimized source engine.
+* State initialization cleanly resets all gameplay variables back to standard defaults upon tapping "PLAY AGAIN".
+
+---
+
+## 📁 Project Structure
+
+NeonCyberDash/
+├── app/               # Main application routing and core logic source files
+├── assets/            # App icon and splash screen assets configuration
+├── components/        # Reusable global layout user interface components
+├── constants/         # Static style colors, measurements, and configurations
+├── hooks/             # Custom state engines and interaction handles
+├── scripts/           # Automation scripts for builds and deployment tracking
+├── app.json           # Global Expo configuration settings
+├── package.json       # Node module dependencies and start scripts
+└── README.md          # Project documentation guide
+
+---
+
+## 🎯 How to Play
+
+1. Launch the app on your phone and tap START GAME.
+2. Tap and hold the ◀ MOVE LEFT and MOVE RIGHT ▶ on-screen buttons to steer your ship.
+3. Dodge the falling neon pink obstacles cascading down from above.
+4. Survive as long as you can to break your personal best!
+5. Tap PLAY AGAIN after a Game Over to clear the screen and launch a new round.
+
+---
+
+## 🗺️ Roadmap / Future Improvements
+
+* Increasing Difficulty: Automatically ramp up the obstacle fall speed as the player's score increases.
+* Multiple Hazards: Generate multiple cascading neon shapes on screen concurrently.
+* Audio Layering: Integrate background electronic synthwave soundtracks and impact sound effects.
+* Power-Ups: Add temporary protective neon shields or slow-motion pick-ups.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👤 Author
+
+Lokesh sai
+*Built as a beginner-friendly React Native + Expo workspace.*
+GitHub: @lokebuilds
