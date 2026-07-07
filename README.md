@@ -73,8 +73,11 @@ This project was built incrementally following a structured AI development workf
 
 ---
 
+---
+
 ## 📁 Project Structure
 
+```text
 NeonCyberDash/
 ├── app/               # Main application routing and core logic source files
 ├── assets/            # App icon and splash screen assets configuration
@@ -85,6 +88,9 @@ NeonCyberDash/
 ├── app.json           # Global Expo configuration settings
 ├── package.json       # Node module dependencies and start scripts
 └── README.md          # Project documentation guide
+```
+
+---
 
 ---
 
